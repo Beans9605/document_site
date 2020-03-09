@@ -1,0 +1,36 @@
+{% extends 'layout/layout.html' %}
+{% load static %}
+
+
+{% block content %}
+<!-- Banner -->
+<section class="banner full">
+    <article>
+        <img src="/static/image/likelion1.jpg" alt="" />
+        <div class="inner">
+            <header>
+                <p>경기대 멋사 8기 서류지원 20년 3월10일 ~ 20년 3월 23일 <a href="{% url 'propose_before' %}">지원하기</a></p>
+                <h2>Like Lion</h2>
+            </header>
+        </div>
+    </article>
+    <article>
+        <img src="/static/image/program1.jpg" alt="" />
+        <div class="inner">
+            <header>
+                <p>경기대학교 멋사에게 <a href="https://open.kakao.com/o/sYcAUY0b">문의하기</a></p>
+                <h2>Hack your life</h2>
+            </header>
+        </div>
+    </article>
+    <article>
+        <img src="/static/image/program2.jpg" alt="" />
+        <div class="inner">
+            <header>
+                <p>자세한 일정 및 모집공고 <a href="https://templated.co">보기</a></p>
+                <h2>Come Up here</h2>
+            </header>
+        </div>
+    </article>
+</section>
+{% endblock %}

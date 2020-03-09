@@ -1,0 +1,36 @@
+{% extends 'layout/layout_link.html' %}
+{% load static %}
+
+{% block nav %}
+<!-- Header -->
+<header id="header" class="{% block alt %}alt{% endblock %}">
+    <div class="logo"><a href="{% url 'home' %}">LikeLion <span>by Kyonggi</span></a></div>
+    <a href="#menu">Menu</a>
+</header>
+
+<!-- Nav -->
+<nav id="menu">
+    <ul class="links">
+        <li><a href="{% url 'home' %}">Home</a></li>
+        <li><a href="{% url 'propose_before' %}">Apply</a></li>
+        <li><a href="elements.html">Elements</a></li>
+    </ul>
+</nav>
+{% endblock %}
+
+{% block footer %}
+		<!-- Footer -->
+        <footer id="footer">
+            <div class="container">
+                <ul class="icons">
+                    <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                    <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                    <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+                    <li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+                </ul>
+            </div>
+            <div class="copyright">
+                &copy; Untitled. All rights reserved.
+            </div>
+        </footer>
+{% endblock %}
