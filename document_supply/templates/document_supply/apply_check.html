@@ -1,0 +1,44 @@
+{% extends 'layout/layout.html' %}
+{% load static %}
+{% block sub %}
+subpage
+{% endblock %}
+{% block alt %}
+{% endblock %}
+{% block content %}
+<!-- One -->
+<section id="One" class="wrapper style3">
+    <div class="inner">
+        <header class="align-center">
+            <p>경기대 멋쟁이사자처럼 8기</p>
+            <h2>지원자</h2>
+        </header>
+    </div>
+</section>
+
+<!-- One -->
+<section id="one" class="wrapper style2">
+    <div class="inner">
+        <div class="grid-style">
+            {% for apply in applies %}
+            <div>
+                <div class="box">
+                    <div class="content">
+                        <header class="align-center">
+                            <p>경기대학교 {{apply.major}} {{apply.grade}}학년</p>
+                            <h2>{{apply.name}}</h2>
+                        </header>
+                        <p> 전화번호 {{apply.phone}}<br>
+                            학번 {{apply.grade_num}}</p>
+                        <footer class="align-center">
+                            <a href="{% url 'apply_one' apply.pk %}" class="button alt">More</a>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+{% endblock %}

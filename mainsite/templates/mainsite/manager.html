@@ -1,0 +1,54 @@
+{% extends 'layout/layout.html' %}
+{% load static %}
+{% block sub %}
+subpage
+{% endblock %}
+{% block alt %}
+{% endblock %}
+
+{% block content %}
+
+<!-- One -->
+<section id="One" class="wrapper style3">
+    <div class="inner">
+        <header class="align-center">
+            <p>관리자 선택창</p>
+            <h2>Manager</h2>
+        </header>
+    </div>
+</section>
+
+<!-- Two -->
+<section id="two" class="wrapper style2">
+    <div class="inner">
+        <div class="box">
+            <div class="content align-center">
+                <header class="align-center">
+                    <p>당신의 아이디어를 자유롭게 펼쳐보세요</p>
+                    <h2>Information</h2>
+                </header>
+                <form method="post" action="{% url 'user_check' %}">
+                    {% csrf_token %}
+                    <div class="row uniform">
+                        <div class="12u$">
+                            <span>Manager ID</span>
+                            <input type="text" name="username" id="name" value="" placeholder="Enter your User name" required/>
+                        </div>
+                        <div class="12u$">
+                            <span>Password</span>
+                            <input type="password" name="password" id="phone" value="" placeholder="Enter password" required/>
+                        </div>
+                        <!-- Break -->
+                        <div class="12u$">
+                            <ul class="actions">
+                                <li><input type="submit" value="Sign In" /></li>
+                                <li><input type="reset" value="Reset" class="alt" /></li>
+                            </ul>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,56 @@
+{% extends 'layout/layout.html' %}
+{% load static %}
+{% block sub %}
+subpage
+{% endblock %}
+{% block alt %}
+{% endblock %}
+{% block content %}
+<!-- One -->
+<section id="One" class="wrapper style3">
+    <div class="inner">
+        <header class="align-center">
+            <p>경기대 멋쟁이사자처럼 8기</p>
+            <h2>지원자</h2>
+        </header>
+    </div>
+</section>
+
+<!-- One -->
+<section id="one" class="wrapper style2">
+    <div class="inner">
+            <div class="box">
+                    <div class="content align-center">
+                        <header class="align-center">
+                            <p>경기대학교 {{apply.major}} {{apply.grade}}학년</p>
+                            <h2>{{apply.name}}</h2>
+                        </header>
+                        <p> 전화번호 {{apply.phone}}<br>
+                            학번 {{apply.grade_num}}</p>
+                            <p>
+                                <br>
+                                <h3>지원동기</h3><br>
+                                {{apply.motivation}}
+                            </p>
+                            <p>
+                                <h3>동아리/단체 가입전과 유무 및 단체내 갈등 해결방법</h3><br>
+                                {{apply.webservice}}
+                            </p>
+                            <p>
+                                <h3>만들고 싶은 웹서비스</h3><br>
+                                {{apply.solution}}
+                            </p>
+                            <p>
+                                <h3>“멋쟁이 사자처럼”에서 얻어가고 싶은 것</h3><br>
+                                {{apply.getting}}
+                            </p>
+                            <br>
+                            <footer class="align-center">
+                                <a href="{% url 'apply_check' %}" class="button alt">되돌아가기</a>
+                            </footer>
+                    </div>
+            </div>
+    </div>
+</section>
+
+{% endblock %}

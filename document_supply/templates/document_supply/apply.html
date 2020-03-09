@@ -19,21 +19,21 @@ subpage
     <!-- Form -->
     <h3>지원 양식</h3>
 
-    <form method="post" action="#">
+    <form method="post" action="{% url 'propose_data' %}">
         {% csrf_token %}
         <div class="row uniform">
             <div class="6u 12u$(xsmall)">
                 <span>지원자 이름</span>
-                <input type="text" name="name" id="name" value="" placeholder="이름" />
+                <input type="text" name="name" id="name" value="" placeholder="이름" required/>
             </div>
             <div class="6u$ 12u$(xsmall)">
                 <span>핸드폰 번호</span>
-                <input type="text" name="phone" id="phone" value="" placeholder="01012345678" />
+                <input type="text" name="phone" id="phone" value="" placeholder="01012345678" required/>
             </div>
             <!-- Break -->
             <div class="6u 12u$(xsmall)">
                 <span>학과</span>
-                <input type="text" name="major" id="major" value="" placeholder="경영정보학과" />
+                <input type="text" name="major" id="major" value="" placeholder="경영정보학과" required/>
             </div>
             <div class="6u$ 12u$(xsmall)">
                 <div class="select-wrapper">
@@ -48,7 +48,7 @@ subpage
             </div>
             <div class="12u$">
                 <span>학번</span>
-                <input type="text" name="grade_num" id="grade_num" value="" placeholder="2020-----" />
+                <input type="text" name="grade_num" id="grade_num" value="" placeholder="2020-----" required/>
             </div>
             <!-- Break -->
             <!-- <div class="6u 12u$(small)">
@@ -62,22 +62,22 @@ subpage
             <!-- Break -->
             <div class="12u$">
                 <span>지원동기</span>
-                <textarea name="motivation" id="motivation" placeholder="500자 이내" rows="6"></textarea>
+                <textarea name="motivation" id="motivation" placeholder="500자 이내" rows="6" required></textarea>
             </div>
             <!-- Break -->
             <div class="12u$">
                 <span>동아리/단체 가입전과 유무 및 단체내 갈등 해결방법</span>
-                <textarea name="solution" id="motivation" placeholder="500자 이내" rows="6"></textarea>
+                <textarea name="solution" id="motivation" placeholder="500자 이내" rows="6" required></textarea>
             </div>
             <!-- Break -->
             <div class="12u$">
                 <span>만들고 싶은 웹서비스</span>
-                <textarea name="webservice" id="motivation" placeholder="500자 이내" rows="6"></textarea>
+                <textarea name="webservice" id="motivation" placeholder="500자 이내" rows="6" required></textarea>
             </div>
             <!-- Break -->
             <div class="12u$">
                 <span>“멋쟁이 사자처럼” 에서 얻어가고 싶은 것</span>
-                <textarea name="getting" id="motivation" placeholder="100자 이내" rows="6"></textarea>
+                <textarea name="getting" id="motivation" placeholder="100자 이내" rows="6" required></textarea>
             </div>
             <!-- Break -->
             <div class="12u$">
