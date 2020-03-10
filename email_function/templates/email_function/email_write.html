@@ -1,46 +1,19 @@
 {% extends 'layout/layout.html' %}
 {% load static %}
-
+{% block sub %}
+subpage
+{% endblock %}
+{% block alt %}
+{% endblock %}
 
 {% block content %}
-<!-- Banner -->
-<section class="banner full">
-    <article>
-        <img src="/static/image/likelion1.jpg" alt="" />
-        <div class="inner">
-            <header>
-                <p>경기대 멋사 8기 서류지원 20년 3월10일 ~ 20년 3월 23일 <a href="{% url 'propose_before' %}">지원하기</a></p>
-                <h2>Like Lion</h2>
-            </header>
-        </div>
-    </article>
-    <article>
-        <img src="/static/image/program1.jpg" alt="" />
-        <div class="inner">
-            <header>
-                <p>경기대학교 멋사에게 <a href="https://open.kakao.com/o/sYcAUY0b">문의하기</a></p>
-                <h2>Hack your life</h2>
-            </header>
-        </div>
-    </article>
-    <article>
-        <img src="/static/image/program2.jpg" alt="" />
-        <div class="inner">
-            <header>
-                <p>자세한 일정 및 모집공고 <a href="{% url 'support' %}">보기</a></p>
-                <h2>Come Up here</h2>
-            </header>
-        </div>
-    </article>
-</section>
-
 
 <!-- One -->
-<section id="two" class="wrapper style3">
+<section id="One" class="wrapper style3">
     <div class="inner">
         <header class="align-center">
-            <p>관리자에게 묻고 싶은 모든 것</p>
-            <h2><a href="https://open.kakao.com/o/sYcAUY0b">1:1 문의하기</a></h2>
+            <p>이메일 문의하기</p>
+            <h2>E-mail</h2>
         </header>
     </div>
 </section>
@@ -64,12 +37,12 @@
                         </div>
                         <div class="12u$">
                             <span>제목</span>
-                            <input type="text" name="title" id="text" value="" placeholder="Enter Title" required />
+                            <input type="text" name="title" id="text" value="" placeholder="Enter Title"
+                                required />
                         </div>
                         <div class="12u$">
                             <span>내용</span>
-                            <textarea name="content" id="content" placeholder="Enter your Question" rows="6"
-                                required></textarea>
+                            <textarea name="content" id="content" placeholder="Enter your Question" rows="6" required></textarea>
                         </div>
                         <!-- Break -->
                         <div class="12u$">

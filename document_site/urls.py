@@ -20,4 +20,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('mainsite.urls'), name="main"),
     path('supply/', include('document_supply.urls'), name="supply"),
+    path('email/', include('email_function.urls'), name="email"),
 ]

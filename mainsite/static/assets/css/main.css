@@ -4260,6 +4260,22 @@
 			}
 
 		}
+		@media screen and (max-width: 450px) {
+
+			.banner > article .inner {
+				width: 80%;
+			}
+
+			.banner > article p {
+				margin-bottom: 0.2rem;
+				font-size : 0.8em;
+			}
+
+			.banner > article h2 {
+				font-size: 2em;
+			}
+
+		}
 
 		body.is-mobile .banner > article {
 			background-attachment: scroll;
