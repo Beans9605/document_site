@@ -30,7 +30,7 @@ def propose_data(request) :
 
     userdata.save()
 
-    request.session["submit_apply"] = "apply"
+    request.session["board"] = "board"
 
     return redirect("home")
 

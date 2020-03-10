@@ -3,6 +3,15 @@
 
 
 {% block content %}
+{% if boardMsg %}
+<script>
+    alert( '게시물 작성이 완료됐습니다!' );
+</script>
+{% elif emailMsg %}
+<script>
+    alert( '이메일 전송이 완료됐습니다!' );
+</script>
+{% endif %}
 <!-- Banner -->
 <section class="banner full">
     <article>

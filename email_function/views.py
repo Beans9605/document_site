@@ -20,4 +20,6 @@ def email_send(request) :
         fail_silently=False,
     )
 
+    request.session["email"] = "email"
+
     return redirect('home')
