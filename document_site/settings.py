@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'mainsite.apps.MainsiteConfig',
     'document_supply.apps.DocumentSupplyConfig',
     'email_function.apps.EmailFunctionConfig',
+    'import_export',
 ]
 
 MIDDLEWARE = [
